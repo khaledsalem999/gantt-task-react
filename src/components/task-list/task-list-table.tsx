@@ -51,6 +51,7 @@ export const TaskListTableDefault: React.FC<{
       style={{
         fontFamily: fontFamily,
         fontSize: fontSize,
+        backgroundColor: 'white'
       }}
     >
       {tasks.map(t => {

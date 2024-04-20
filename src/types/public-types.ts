@@ -31,6 +31,16 @@ export interface Task {
   dependencies?: string[];
   hideChildren?: boolean;
   displayOrder?: number;
+  description: string,
+  progressReport: ProgressReport[]
+}
+
+interface ProgressReport {
+  reportStartDate: Date,
+  reportEndDate: Date,
+  reportProgress: number,
+  isReportStatusPostive : boolean,
+  reportComment : string
 }
 
 export interface EventOption {
